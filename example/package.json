@@ -6,9 +6,12 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start"
+    "start": "react-native start",
+    "pod": "cd ios && pod",
+    "reinstall": "yarn remove nulla-env && yarn add file:../"
   },
   "dependencies": {
+    "nulla-env": "file:../",
     "react": "16.13.1",
     "react-native": "0.63.4"
   },

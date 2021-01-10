@@ -7,8 +7,6 @@ target 'NullaEnvExample' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
-
-      pod 'nulla-env', :path => '../..'
   
   # Enables Flipper.
   #
