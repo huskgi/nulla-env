@@ -138,6 +138,7 @@
     ]
   },
   "dependencies": {
+    "execa": "^5.0.0",
     "jsonschema": "^1.4.0"
   }
 }

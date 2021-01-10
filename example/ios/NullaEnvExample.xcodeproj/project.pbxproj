@@ -137,7 +137,6 @@
 				47F7ED3B7971BE374F7B8635 /* Pods-NullaEnvExample.debug.xcconfig */,
 				E00ACF0FDA8BF921659E2F9A /* Pods-NullaEnvExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -355,10 +354,15 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}",
+			);
 			name = "[CP-User] [NULLA-ENV] Configure App";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\n\nset -euxo pipefail\n\nnode ../node_modules/nulla-env/scripts/configure.ios.js\n\necho \"info: <- NULLA build script finished\"\n";
+			shellScript = "#!/usr/bin/env bash\n\nset -euxo pipefail\n\n/Users/holly/.nvm/versions/node/v10.23.0/bin/node  ../node_modules/nulla-env/scripts/configure.ios.js\n\necho \"info: <- NULLA build script finished\"\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
